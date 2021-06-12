@@ -1,8 +1,19 @@
 import React from "react";
 
 const ErrorExample = () => {
-  return <h2>useState error example</h2>;
+  let title = "randome ";
+  const handleClick = () => {
+    title = "randome nonononononon ";
+    console.log("click");
+  };
+  return (
+    <React.Fragment>
+      <h2>{title}</h2>
+      <button typeof="button" className="btn" onClick={handleClick}>
+        press
+      </button>
+    </React.Fragment>
+  );
 };
 
 export default ErrorExample;
-// jay
